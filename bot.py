@@ -49,8 +49,9 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("👩‍👩‍👦‍👦Group", url="https://t.me/Mo_Tech_Group"),
-                        InlineKeyboardButton("🔊Channel", url="https://t.me/Mo_Tech_YT")
+                        InlineKeyboardButton("🗣️Group", url="https://t.me/Mo_Tech_Group"),
+                        InlineKeyboardButton("📢Channel", url="https://t.me/Mo_Tech_YT"),
+                        InlineKeyboardButton("📃Bot List", url="https://t.me/Mo_Tech_YT/176")  
                     ],
                     [
                         InlineKeyboardButton("💻 Tutorial Video 💻", url="https://youtu.be/RPs9vz_neXg")
@@ -367,7 +368,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                     return
             except UserNotParticipant:
                 await cmd.message.edit(
-                    text="**You Still Didn't Join ☹️, Please Join My Updates Channel to use this Bot!**\n\nDue to Overload, Only Channel Subscribers can use the Bot!",
+                    text="**You Still Didn't Join ☹️, Please Join My Updates Channel!",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
@@ -395,8 +396,9 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("👩‍👩‍👦‍👦Group", url="https://t.me/Mo_Tech_Group"),
-                        InlineKeyboardButton("🔊Channel", url="https://t.me/Mo_Tech_YT")
+                        InlineKeyboardButton("🗣️Group", url="https://t.me/Mo_Tech_Group"),
+                        InlineKeyboardButton("📢Channel", url="https://t.me/Mo_Tech_YT"),
+                        InlineKeyboardButton("📃Bot List", url="https://t.me/Mo_Tech_YT/176")  
                     ],
                     [
                         InlineKeyboardButton("💻 Tutorial Video 💻", url="https://youtu.be/RPs9vz_neXg")
